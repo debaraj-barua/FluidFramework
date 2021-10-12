@@ -1,5 +1,6 @@
 {{ $update := .Site.Params.update }}
 {{- if and $update $update.showBanner -}}
+<div class="banner">
 <div class="updates-banner">
     <div class="container">
         <p class="message">
@@ -7,5 +8,6 @@
         available! Read about the new features and fixes from the release.</p>
     </div>
     <div tabindex="0" role="button" title="Dismiss this update" class="dismiss-btn" id="banner-dismiss-btn"><span class="sr-only">Dismiss this update</span><span aria-hidden="true" class="glyph-icon"></span></div>
+</div>
 </div>
 {{- end -}}

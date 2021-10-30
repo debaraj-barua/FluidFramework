@@ -574,8 +574,6 @@ export interface ISummaryOpMessage extends ISequencedDocumentMessage {
 export interface ISummaryRuntimeOptions {
     // (undocumented)
     disableIsolatedChannels?: boolean;
-    generateSummaries?: boolean;
-    // (undocumented)
     initialSummarizerDelayMs?: number;
     // (undocumented)
     maxOpsSinceLastSummary?: number;
@@ -627,7 +625,7 @@ export class PendingStateManager implements IDisposable {
         localOpMetadata: unknown;
     };
     replayPendingStates(): void;
-}
+    }
 
 // @public (undocumented)
 export class ScheduleManager {

@@ -16,6 +16,8 @@ export interface ISummaryConfiguration {
     maxOps: number;
 
     maxAckWaitTime: number;
+
+    generateSummaries?: boolean;
 }
 
 /**
